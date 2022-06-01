@@ -7,7 +7,7 @@ This is app is part of my PROG8560 Assignment. Originally developed as part of m
 Use the package manager [npm](https://www.npmjs.com) to install packages.
 
 ```bash
-npm init
+npm install
 ```
 
 ## Usage
