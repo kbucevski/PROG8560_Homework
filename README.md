@@ -23,3 +23,6 @@ Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+I chose this licence because this is a simple school project and I don't mind if other people use it or distribute it.
+The MIT License is short and to the point. It lets people do almost anything they want with your project, like making and distributing closed source versions.
