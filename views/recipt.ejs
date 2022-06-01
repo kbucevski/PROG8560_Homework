@@ -1,0 +1,23 @@
+<%- include('layouts/head'); -%>
+
+    <body>
+        <%- include("layouts/navbar") %>
+
+        <div id="center">
+            <h3>Thank you for your order</h3>
+
+            <p style="text-align: center;">Here are your details:</p>
+
+            <p>Name: <%= name %></p>
+            <p>Student ID: <%= studentID %></p>
+
+            <p>Total Mango Juices = <%= mango %></p>
+            <p>Total Berry Juices = <%= berry %></p>
+            <p>Total Apple Juices = <%= apple %></p>
+
+            <p>Sub Total = <%= subTotal.toFixed(2) %></p>
+            <p>Tax = <%= tax.toFixed(2) %></p>
+            <p>Total cost = <%= total.toFixed(2) %></p>
+        </div>
+    </body>
+    <%- include("layouts/footer") %>

@@ -1,0 +1,22 @@
+{
+  "name": "final-exam-kb",
+  "version": "1.0.0",
+  "description": "Final Exam for Web Design & Development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "exam",
+    "web"
+  ],
+  "author": "Kristijan Bucevski",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.7",
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "express-validator": "^6.14.0",
+    "mongoose": "^6.3.0"
+  }
+}

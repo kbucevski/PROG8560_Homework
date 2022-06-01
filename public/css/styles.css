@@ -1,0 +1,89 @@
+body {
+    background-color: #99bac9;
+    font-size: 0.9vw;
+    /* margin: -3%; */
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #25283D;
+}
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav li a:hover {
+    background-color: #17181f;
+}
+nav li a:visited {
+    color: white;
+}
+h1 {
+    color: #464646;
+    font-family: Copperplate;
+    font-size: 4vw;
+    margin-bottom: 1%;
+}
+
+form {
+    text-align: center;
+}
+label {
+    width: 6vw;
+    display: inline-block;
+    text-align: left;
+    padding-bottom: 2vh;
+}
+input[type=submit]{
+    padding: 1vh;
+    margin-bottom: 2vh;
+}
+select {
+    width: 147px;
+}
+#error-container{
+    /* display: flex; */
+    text-align: center;
+    color: red;
+}
+#center {
+    width: 50%;
+    border: black solid 2px;
+    margin: 2vw auto;
+    text-align: center;
+}
+table {
+    margin: 4vh auto;
+    border-collapse: collapse;
+    width: 70%;
+    text-align: center;
+}
+
+table,
+th,
+td {
+    border: 4px solid white;
+}
+
+td {
+    height: 2em;
+}
+
+thead {
+    background-color: #028090;
+    color: white;
+}
+th {
+    padding-inline: 0.8vw;
+}

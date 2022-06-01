@@ -1,0 +1,46 @@
+<%- include('layouts/head'); -%>
+
+<body>
+  <%- include('layouts/navbar'); -%>
+
+  <div id="center">
+    <h4>List of Orders:</h4>
+
+    <table>
+      <thead>
+        <th>Name</th>
+        <th>Student ID</th>
+        <th>Mango Juices</th>
+        <th>Berry Juices</th>
+        <th>Apple Juices</th>
+        <th>Sub Total</th>
+        <th>Tax</th>
+        <th>Total</th>
+        <th>Manage</th>
+      </thead>
+      <tbody>
+        <% 
+              for (var order of orders) {
+          %>
+        <tr>
+          <td> <%= order.studentname %> </td>
+          <td> <%= order.studentid %> </td>
+
+          <td> <%= order.mjuice %> </td>
+          <td> <%= order.bjuice %> </td>
+          <td> <%= order.ajuice %> </td>
+
+          <td> <%= (order.mjuice * 6.99 + order.bjuice * 5.99 + order.ajuice * 3.99).toFixed(2) %> </td>
+          <td> <%= ((order.mjuice * 6.99 + order.bjuice * 5.99 + order.ajuice * 3.99) * 0.13).toFixed(2) %> </td>
+          <td> <%= ((order.mjuice * 6.99 + order.bjuice * 5.99 + order.ajuice * 3.99) * 1.13).toFixed(2) %> </td>
+
+          <td><a href="/delete/<%= order._id %>">Delete</a></td>
+        </tr>
+        <%
+              }
+          %>
+      </tbody>
+    </table>
+  </div>
+</body>
+<%- include('layouts/footer'); -%>
